@@ -1,12 +1,10 @@
-import type { NextPage } from 'next'
-import styles from '@src/styles/Home.module.css'
+import type { NextPage } from "next";
+import styled from "styled-components";
 
-const Home: NextPage = () => {
-  return (
-    <div className={styles.container}>
-        hi!
-    </div>
-  )
-}
+const Container = styled.div`
+  //background-color: black;
+`;
 
-export default Home
+const Home: NextPage = () => <Container>hi!</Container>;
+
+export default Home;
